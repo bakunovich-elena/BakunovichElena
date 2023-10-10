@@ -14,8 +14,8 @@
 <body>
     <table border="1" width="800px" cellpadding="25" cols="2">
         <tr>
-            <td><strong>Простая форма поиска с вариантами:</strong>
-               <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
+            <td><strong>Простая форма поиска с вариантами:</strong> 
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
                 <fieldset>
                     <legend>Строка поиска</legend>
                     <p><input type="search" name="text" maxlength="10">
@@ -51,7 +51,7 @@
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="авторизация" target="_blank">
                     <fieldset>
                         <legend>Авторизируйтесь</legend>
-                                                  <input type="text" name="login" id="login"required>  
+                            <input type="text" name="login" id="login"required>  
                              <label class="label-required" for="login"></label>                     
                              <label for="login">Логин</label>
                              <br>
@@ -70,7 +70,25 @@
                      </form> 
             </td>
             <td><strong>Опрос(голосование):</strong>
-                
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" name="голосование" target="_blank">
+                    <fieldset>
+                        <legend>Как вам?</legend>                       
+                             <label>
+                                <input type="radio" name="radio_group" value="1">ничего<br>                      
+                            </label>
+                            <label>
+                                <input type="radio" name="radio_group" value="2">неплохо<br>                  
+                            </label>
+                            <label>
+                                <input type="radio" name="radio_group" value="3">хорошо<br>                      
+                            </label>
+                            <label>
+                                <input type="radio" name="radio_group" value="4">супер<br>                      
+                            </label>
+                            <input type="submit" value="Отправить">
+                            <input type="hidden" name="'date_voite" value="2013.12.31">
+                    </fieldset>
+                     </form> 
             </td>
         </tr>
         <tr>
