@@ -12,9 +12,9 @@
     </style>
 </head>
 <body>
-    <table border="1" width="700px" cellpadding="25" cols="2">
+    <table border="1" width="800px" cellpadding="25" cols="2">
         <tr>
-            <td valigh="top"><strong>Простая форма поиска с вариантами:</strong>
+            <td><strong>Простая форма поиска с вариантами:</strong>
                <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
                 <fieldset>
                     <legend>Строка поиска</legend>
@@ -29,7 +29,7 @@
                 </fieldset>
                  </form> 
             </td>
-            <td valigh="top"><strong>Простая форма поиска с вариантами:</strong>
+            <td><strong>Простая форма поиска с вариантами:</strong>
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
                     <fieldset>
                         <legend>Строка поиска</legend>                       
@@ -41,14 +41,33 @@
                             <label>
                                 <input type="radio" name="radio_group" value="2">в google                       
                             </label> <br>
-                            <span> * - обязательное поле</span></label>
+                            <span><em> * - обязательное поле</em></span>
                     </fieldset>
                      </form> 
             </td>
         </tr>
         <tr>
             <td><strong>Простая форма авторизации</strong>
-               
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" name="авторизация" target="_blank">
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                                                  <input type="text" name="login" id="login"required>  
+                             <label class="label-required" for="login"></label>                     
+                             <label for="login">Логин</label>
+                             <br>
+                            <input type="password" name="password" id="pass"required>
+                            <label class="label-required" for="pass"></label>
+                            <label for="pass">Пароль</label>            
+                            <br>
+                            <label>
+                            <input type="checkbox" name="val_1" id="chbox1" checked> Оставаться в системе
+                           </label>  
+                            <br>
+                            <input type="submit" value="Войти">
+                            <br>
+                            <span><em>* - обязательное поле</em> </span>
+                    </fieldset>
+                     </form> 
             </td>
             <td><strong>Опрос(голосование):</strong>
                 
