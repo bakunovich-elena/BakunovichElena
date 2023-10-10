@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+      .label-required::after {
+  content: "*";
+  font-size: 1.0em;
+}  
+    </style>
+</head>
+<body>
+    <table border="1" width="700px" cellpadding="25" cols="2">
+        <tr>
+            <td valigh="top"><strong>Простая форма поиска с вариантами:</strong>
+               <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <p><input type="search" name="text" maxlength="10">
+                        <input type="submit" value="Искать" ></p>
+                        <label>
+                            <input type="radio" name="radio_group" value="1">на сайте                        
+                        </label>
+                        <label>
+                            <input type="radio" name="radio_group" value="2">в google                       
+                        </label>
+                </fieldset>
+                 </form> 
+            </td>
+            <td valigh="top"><strong>Простая форма поиска с вариантами:</strong>
+                <form action="http://fe.it-academy.by/TestForm.php" method="get" name="Строка поиска" target="_blank">
+                    <fieldset>
+                        <legend>Строка поиска</legend>                       
+                        <p><input type="search"  name="text" autofocus ><label class="label-required" for="test"></label>
+                            <input type="submit" value="Искать" id="test"required > </p>
+                            <label>
+                                <input type="radio" name="radio_group" value="1">на сайте                        
+                            </label>
+                            <label>
+                                <input type="radio" name="radio_group" value="2">в google                       
+                            </label> <br>
+                            <span> * - обязательное поле</span></label>
+                    </fieldset>
+                     </form> 
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Простая форма авторизации</strong>
+               
+            </td>
+            <td><strong>Опрос(голосование):</strong>
+                
+            </td>
+        </tr>
+        <tr>
+             <td><strong>Отзыв:</strong>
+                
+            </td>
+             <td><strong>Выпадающий и мульти списки:</strong>
+                
+            </td>
+        </tr>
+        <tr>
+             <td><strong>Загрузка файла на сервер:</strong>
+               
+            </td>
+             <td><strong>Валидация данных HTML5:</strong>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
