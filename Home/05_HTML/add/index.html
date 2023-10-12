@@ -3,16 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img</title>
+    <title>Questionnaire</title>
 </head>
 <body>
-<p><img src="car2.gif"></p> 
-<!--Выбираем gif, так как малое кол-во цветов, градиент не более 2хцветов,нужна прозрачность-->
-<p><img src="train3.jpeg"></p>
-<!--Выбираем jpeg, так как кол-во цветов более 256, переходы цветов нужны плавные, прозрачность не нужна-->
-<p><img src="color2.gif"></p>
-<!--Выбираем gif, так как малое кол-во цветов, нет градиента, нужна прозрачность-->
-</a>
-</p>
+<h1 align="center">Заполните анкету</h1>
+<form action="http://fe.it-academy.by/TestForm.php" method="get" name="Questionnaire" target="_blank">
+<fieldset>
+    <legend>Личные данные</legend>
+    <input type="text" name="surname" required autofocus placeholder="Фамилия" maxlength="25" pattern="[А-Яа-я]+"><br>
+    <input type="text" name="name" required placeholder="Имя" maxlength="20"  pattern="[А-Яа-я]+"><br>
+    <input type="text" name="last name" required placeholder="Отчество" maxlength="24"  pattern="[А-Яа-я]+"><br>
+      <fieldset>
+        <legend>Паспортные данные</legend>
+        <input type="text" name="pasport_series" required maxlength="2" placeholder="Серия" pattern="[A-Z]{2}">
+        <input type="text" name="pasport_number" required maxlength="7" placeholder="Номер" pattern="[1-9]{7}">
+      </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" name="date_of_birth"  maxlength="4" placeholder="Год" pattern="(1|2)(0|9)[0-9]{2}"><br>
+            <select name="month" size="1">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            <input type="number" name="num" min="1" max="31" step="1">
+        </fieldset>
+        <select name="nationality" size="1" required >
+            <option value="1">РБ</option>
+            <option value="2">Иностранный гражданин</option>           
+        </select><br>
+        <span>Адрес:</span><br>
+        <textarea rows="2" cols="20"></textarea>
+</fieldset>
+<fieldset>
+    <legend>Интересы</legend>
+        <fieldset>
+            <legend>Хобби</legend>
+            <input type="checkbox" name="hobby" value="1"> Рыбалка<br>
+            <input type="checkbox" name="hobby" value="2" >Астрономия<br>
+            <input type="checkbox" name="hobby" value="3" >Дайвинг<br>
+            <input type="checkbox" name="hobby" value="4">Марки<br>
+        </fieldset>
+        <fieldset>
+            <legend>Домашние животные</legend>
+            <select multiple name="pets" size="12" >
+                <optgroup label="Попугаи"> 
+                <option value="1">Волнистый</option>
+                <option value="2">Ара</option>
+                <option value="3">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">  
+                <option value="4">Караси</option>
+                <option value="5">Окуни</option>
+                <option value="6">Осетр</option>
+             </optgroup> 
+             <optgroup label="Птицы">  
+                <option value="7">Стая ворон</option>
+                <option value="8">Аист</option>
+                <option value="9">Археоптерикс</option>
+            </select>
+        </fieldset>
+</fieldset>
+
+
+
+<p><input type="submit" name="submit"></p>
+
+</form>
 </body>
 </html>
