@@ -73,11 +73,29 @@
             </select>
         </fieldset>
 </fieldset>
-
-
-
-<p><input type="submit" name="submit"></p>
-
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="text" name="login" required  maxlength="20" placeholder="Логин" pattern="[A-Za-z]{5,20}"><br>
+            <input type="password" name="pass" required maxlength="20" placeholder="Пароль" autocomplete="off" pattern="[A-Za-z]{10,20}"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Координаты:</legend>
+            <input type="email" name="email"placeholder="Введите адрес почты" required><br>
+            <input type="url" name="site" placeholder="Введите адрес сайта" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" name='num' min="-2.5" max="2.5" step="0.1"> <br>
+            <input type="range" min="1" max="10"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления </legend>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить"><br>
+            <button type="button">
+                <img src="email.jpeg">
+            </button>                     
+        </fieldset>
 </form>
 </body>
 </html>
