@@ -1,65 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    
-      .navigation{
-        width: 15em;
-        background-color: rgb(187, 255, 0);
-        float:left;                
-      }
-      .article1{
-        height: 150px;
-        background-color: bisque;
-        margin-bottom: .2em;
-      }
-      .article2{
-        height: 150px;
-        background-color: bisque;
-        margin-bottom: .2em;
-        
-      }
-      .footer{
-        clear:both;
-        background-color: rgb(144, 144, 51);      
-           }
-    
-      .clear{
-        clear:both;
-      }
-      .email{
-        float: right;
-       margin-top: 55px;
-       }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      background-color: lightgrey;
+    }
 
-    </style>
+    .navigation {
+      width: 15em;
+      background-color: darkgrey;
+      float: left;
+    }
+
+    .article1 {
+      height: 150px;
+      background-color: grey;
+      margin-bottom: .2em;
+      margin-left: 15em;
+      white-space: pre;
+
+    }
+
+    .footer {
+      clear: both;
+      background-color: grey;
+    }
+
+    .clear {
+    clear: both;
+    }
+    .email{
+      float: right;
+      margin-top: -3em;
+     
+    }
+    
+  </style>
 </head>
+
 <body>
-    <div>
-    <div class="navigation">Блок навигации
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, deleniti architecto? Recusandae voluptas laborum eveniet sit. Quaerat aut reprehenderit minima tempore animi magni quos cum eaque, rem sequi nostrum aspernatur.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa corporis incidunt impedit fugiat molestias ea cupiditate hic? Provident distinctio accusantium nulla doloribus dicta illo saepe ea, fuga quam amet libero!
-    i odit tenetur in sapiente? Aut dolor ea eligendi.
-
+  <div class="wrap">
+    <div class="navigation"><strong>Блок навигации</strong><br>
+      <ul>
+        <li>Ширина 15em</li>
+        <li>Должен присутствовать цвет фона</li>
+        <li>Располагается слева</li>
+        <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую статью, как
+          показано в данном примере
+        </li>
+      </ul>
     </div>
-    <div class="article1"> Статья 1
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, rerum fugit in quisquam illum nulla voluptatem consequatur veritatis expedita eius dolorum eveniet dolorem impedit facere debitis vitae eaque alias asperiores.
-
+    <div class="article1"><strong>Статья 1</strong><br> 
+      Размер блока:
+      Занимает всю доступную ширину
+      Должен присутствовать цвет фона
+      Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom
     </div>
-    <div class="article2"> Статья 2
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos illum soluta reiciendis voluptatum ipsum illo, perferendis molestiae repudiandae saepe facere harum accusantium culpa ea eaque consequatur, provident, libero dicta cupiditate!
-
-        <div class="email"> <img src="111-1113128_iphone-mail-icon-png-wwwimgkidcom-the-image-kid.png"> </div>
-    </div>
-    <div class="clear"></div>
-    </div>
-    <div class="footer"> Подвал 
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, voluptatem vitae sapiente, hic sequi ducimus id fuga perferendis, itaque sunt numquam ratione? Ipsam, dolores. Molestias eius eum commodi illo laborum!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, nihil quod ad magnam consequatur possimus quasi ratione ducimus reiciendis aliquid. Cumque dolores sequi, magni eaque voluptate porro! Provident, iste nobis.
-    
-    </div>
+    <div class="article1"><strong>Статья 2</strong><br> 
+      Размер блока:
+      Занимает всю доступную ширину
+      Должен присутствовать цвет фона
+      Во всех "статьях" сделайте отступ снизу от соседей равным .2em при помощи свойства margin-bottom
+      Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки
+      <div class="email"> <img  src="111-1113128_iphone-mail-icon-png-wwwimgkidcom-the-image-kid.png">
+      </div>
+      
+    </div>  
+  </div>
+  <div class="clear"></div>
+   <div class="footer"> 
+    Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутри контентом.
+     </div>
 </body>
+
+
 </html>
