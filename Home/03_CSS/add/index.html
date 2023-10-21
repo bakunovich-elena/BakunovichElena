@@ -16,6 +16,7 @@
         div.MenuLevel1>div {
             float: left;
             width: 150px;
+            height: 20px;
             background-color: lightgrey;
             border: solid black 1px;
             border-radius: 4px;
@@ -25,7 +26,11 @@
 
         div.MenuLevel2 {
             width: 150px;
-            display: none
+            opacity: 0;
+            -webkit-transition: all 2s linear 0.5s;
+            -moz-transition: all 2s linear 0.5s;
+            -o-transition: all 2s linear 0.5s;
+            transition: all 2s linear 0.5s;
         }
 
         div.MenuLevel2>div {
@@ -36,7 +41,7 @@
         }
 
         div.MenuLevel1>div:hover div.MenuLevel2 {
-            display: block;
+            opacity: 1;
         }
 
         @media all and (max-width:927px) {
@@ -45,7 +50,7 @@
             }
 
             div.MenuLevel1>div:hover div.MenuLevel2 {
-                display: block;
+                opacity: 1;
                 position: absolute;
                 left: 100%;
                 top: 0;
