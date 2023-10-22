@@ -21,6 +21,7 @@
             border-radius: 4px;
             position: relative;
             cursor: pointer;
+            color:dimgray;
         }
 
         div.MenuLevel2 {
@@ -33,12 +34,18 @@
             border: solid black 1px;
             border-radius: 4px;
             cursor: pointer;
+            color:dimgray;
         }
 
         div.MenuLevel1>div:hover div.MenuLevel2 {
             display: block;
-        }
 
+        }
+        div.MenuLevel1>div:hover {
+           background-color: darkgrey;
+           color: lightgray;
+                       
+        }
         @media all and (max-width:927px) {
             div.MenuLevel1>div {
                 float: none;
