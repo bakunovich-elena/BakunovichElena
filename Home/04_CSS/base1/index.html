@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            border: solid grey 1px;
+            border-radius: 0 15px;
+            padding: 1em;
+            width: 700px;
+            text-indent: 2em;
+        }
+
+        a[href^="https://"] {
+            color: blue;
+        }
+
+        .level1 {
+            list-style-image: url(list.jpeg);
+        }
+
+        .level2 {
+            opacity: 0;
+            ;
+        }
+
+        li:hover .level2 {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Форматы документов.</h1>
+    <div class="text">
+        .DOC или .doc (от англ.<img src="link.png"> <a
+            href="https://www.microsoft.com/ru-ru/microsoft-365/word?market=ru">document</a>)-расширение имени файла,
+        используемое для файлов,
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для обозначениния
+        простых текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов с
+        разметкой.<br>
+        <a href="https://www.microsoft.com/ru-ru/microsoft-365/word?market=ru">Документ MS Word</a> <img src="doc.jpeg">
+    </div>
+    <div class="text">
+        Portable Document Format (<img src="link.png"><a href="https://www.adobe.com/ru/">PDF</a>) - межплатформенный
+        формат электронных документов,
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript.
+        <a href="https://www.adobe.com/ru/">Документ РDF</a><img src="pdf.png"><br>
+    </div>
+    <div class="text">
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <img src="link.png"><a href="https://www.7-zip.org/">zip</a> и хранит в сжатом или
+        несжатом виде один или несколько
+        файлов, которые можно из него извлечь путем распаковки с помощью специальной программы.<br>
+        <a href="https://www.7-zip.org/">Архив</a><img src="zip.gif">
+
+    </div>
+    <h1>Это список файлов</h1>
+    <ul class="level1">
+        <li><a href="https://www.microsoft.com/ru-ru/microsoft-365/word?market=ru">Документ MS Word</a>
+            <img class="level2" src="doc.jpeg">
+        </li>
+        <li><a href="https://www.adobe.com/ru/">Документ РDF</a>
+            <img class="level2" src="pdf.png">
+        </li>
+        <li><a href="https://www.7-zip.org/">Архив</a>
+            <img class="level2" src="zip.gif">
+        </li>
+    </ul>
+</body>
+
+</html>
