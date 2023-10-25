@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li span a {
+            color: rosybrown
+        }
+
+        li a {
+            color: orange
+        }
+
+        li em a {
+            color: violet
+        }
+
+        p em a {
+            color: grey
+        }
+
+        div p em a {
+            color: yellow
+        }
+
+        div ul li span a {
+            color: green;
+        }
+
+        div ul li a {
+            color: red;
+        }
+
+        span em a {
+            color: black
+        }
+
+        li div p a {
+            color: white;
+            background-color: black;
+        }
+
+        li div ul li span a {
+            color: brown
+        }
+
+        li div ul li em a {
+            color: chocolate
+        }
+
+        li div ul li a {
+            color: indigo
+        }
+
+        div ul li em a {
+            color: blue;
+        }
+
+        li p em a {
+            color: aqua
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span><em><a href="#">test</a></span>
+        <ul>
+            <li><a href="#">test1</a>
+            </li>
+            <li>
+                <span><a href="#">test2</a></span>
+            </li>
+            <li><em><a href="#">test3</a></em>
+            </li>
+        </ul>
+        <p><em><a href="#">test4</a></p>
+
+    </div>
+    <ul>
+        <li>
+            <em><a href="#">test5</a></em>
+            <span><a href="#">test6</a></span>
+            <a href="#">test7</a>
+        </li>
+        <li>
+            <p><em><a href="#">test8</a></em></p>
+        </li>
+        <li>
+            <div>
+                <p><a href="#">test9</a></p>
+                <ul>
+                    <li>
+                        <span><a href="#">test10</a></span>
+                    </li>
+                    <li><a href="#">test11</a></li>
+                    <li><em><a href="#">test12</a></em></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <p><em><a href="#">test13</a></em>
+    </p>
+</body>
+
+</html>
