@@ -1,9 +1,53 @@
-var firstInput = document.getElementById("first").value;
-var secondInput = document.getElementById("second").value;
+<!DOCTYPE html>
+<html lang="en">
 
-if (firstInput === secondInput) {
-    // do something here if inputs are same
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
 
-} else {
-    // do something if the first input is less than the second
-}get
+    </style>
+</head>
+
+<body>
+    <h1>Проверка пароля</h1>
+    <form>
+        <fieldset>
+            <input type="password" class="first">
+            <label for="first">*Пароль</label><br>
+            <input type="password" class="second">
+            <label for="second">*Повторите пароль</label><br>
+            <button>Отправить</button>
+        </fieldset>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.first').on('keyup', function(){
+            $('input').css('backgroundColor', 'green');   
+            })
+            $('.second').on('keyup', function () {
+                var pw1 = $('.first').val();
+                var pw2 = $(this).val();
+                if (pw2 != pw1) {
+                    $('input').css('backgroundColor', 'red');
+                } else {
+                    $('input').css('backgroundColor', 'green');
+                }
+            })            
+        }); 
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
